@@ -40,6 +40,11 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+
+    .ad-container {
+      margin: 20px auto;
+      text-align: center;
+    }
   </style>
 </head>
 <body class="bg-gray-50">
@@ -65,6 +70,13 @@
           See Demo
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- Ad Section (Top) -->
+  <section class="py-10 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto ad-container">
+      <div id="ad-top"></div>
     </div>
   </section>
 
@@ -139,6 +151,13 @@
         </div>
         
       </div>
+    </div>
+  </section>
+
+  <!-- Ad Section (Middle) -->
+  <section class="py-10 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto ad-container">
+      <div id="ad-middle"></div>
     </div>
   </section>
 
@@ -261,8 +280,44 @@
     </div>
   </section>
 
-  <!-- Roadmap -->
+  <!-- Revenue Model -->
   <section class="py-20 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">💎 Transparent Revenue Model</h2>
+      <p class="text-center text-gray-600 mb-12 text-lg">How we allocate our funds</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        
+        <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl shadow-lg text-center">
+          <div class="text-6xl font-bold text-purple-600 mb-3">60-70%</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800">User Rewards</h3>
+          <p class="text-gray-600">Distributed directly to our users as mining rewards and bonuses</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl shadow-lg text-center">
+          <div class="text-6xl font-bold text-blue-600 mb-3">20-25%</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800">Platform Costs</h3>
+          <p class="text-gray-600">Server hosting, domain, security, and development expenses</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl shadow-lg text-center">
+          <div class="text-6xl font-bold text-green-600 mb-3">10-15%</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800">Withdrawal Reserve</h3>
+          <p class="text-gray-600">Reserved fund to ensure smooth withdrawal processing</p>
+        </div>
+        
+      </div>
+      
+      <div class="bg-gradient-to-r from-purple-100 to-blue-100 p-8 rounded-xl">
+        <p class="text-center text-gray-800 text-lg">
+          <span class="font-bold">💚 Our Commitment:</span> We share the majority of revenue with our users. Platform costs include server, domain, security, and development expenses to ensure a sustainable and reliable service.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap -->
+  <section class="py-20 px-6 bg-white">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Roadmap</h2>
       <p class="text-center text-gray-600 mb-12 text-lg">Our future plans</p>
@@ -270,38 +325,62 @@
       <div class="space-y-8">
         
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">✓</div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Phase 1: Beta Launch</h3>
-            <p class="text-gray-600">Launch basic mining and referral system</p>
+          <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">⏳</div>
+          <div class="flex-grow">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-purple-200">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Phase 1: Beta Launch (Q4 2025)</h3>
+              <p class="text-gray-600 mb-3">Launch basic mining, referral, and daily bonus system</p>
+              <div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
+                🚀 Launching December 2025
+              </div>
+            </div>
           </div>
         </div>
         
         <div class="flex gap-4">
           <div class="flex-shrink-0 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">2</div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Phase 2: Wallet Integration</h3>
-            <p class="text-gray-600">Crypto wallet connect and token transfer</p>
+          <div class="flex-grow">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-gray-200">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Phase 2: Revenue & Withdrawal (Q2 2026)</h3>
+              <p class="text-gray-600">Detailed revenue model discussion and withdrawal system launch</p>
+            </div>
           </div>
         </div>
         
         <div class="flex gap-4">
           <div class="flex-shrink-0 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">3</div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Phase 3: Exchange Listing</h3>
-            <p class="text-gray-600">List FarmToken on major exchanges</p>
+          <div class="flex-grow">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-gray-200">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Phase 3: Mobile App Launch (Q4 2026)</h3>
+              <p class="text-gray-600">Launch iOS and Android applications</p>
+            </div>
           </div>
         </div>
         
         <div class="flex gap-4">
           <div class="flex-shrink-0 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">4</div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Phase 4: Mobile App</h3>
-            <p class="text-gray-600">Launch iOS and Android applications</p>
+          <div class="flex-grow">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-gray-200">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Phase 4: Blockchain-Based System (2027+)</h3>
+              <p class="text-gray-600">Blockchain-based token system and crypto withdrawal</p>
+            </div>
           </div>
         </div>
         
       </div>
+      
+      <div class="mt-12 bg-gradient-to-r from-green-100 to-emerald-100 p-8 rounded-xl">
+        <p class="text-center text-gray-800 text-lg">
+          <span class="font-bold">💚 Our Commitment:</span> This is a long-term project. We are committed to providing service for many years to come.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ad Section (Bottom) -->
+  <section class="py-10 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto ad-container">
+      <div id="ad-bottom"></div>
     </div>
   </section>
 
@@ -336,6 +415,72 @@
       <p class="text-gray-500 text-sm">&copy; 2025 FarmToken. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Ad Script -->
+  <script type="text/javascript">
+    // Array of ad configurations
+    const ads = [
+      {
+        key: '63718988f07bc6d276f3c6a441757cae',
+        format: 'iframe',
+        height: 90,
+        width: 728,
+        src: '//www.highperformanceformat.com/63718988f07bc6d276f3c6a441757cae/invoke.js'
+      },
+      {
+        key: 'c620af328467e6de19dc04af696ee0fb',
+        format: 'iframe',
+        height: 250,
+        width: 300,
+        src: '//www.highperformanceformat.com/c620af328467e6de19dc04af696ee0fb/invoke.js'
+      },
+      {
+        key: '78ade24182729fceea8e45203dad915b',
+        format: 'iframe',
+        height: 50,
+        width: 320,
+        src: '//www.highperformanceformat.com/78ade24182729fceea8e45203dad915b/invoke.js'
+      }
+    ];
+
+    // Array of ad positions
+    const adPositions = [
+      { id: 'ad-top', element: document.getElementById('ad-top') },
+      { id: 'ad-middle', element: document.getElementById('ad-middle') },
+      { id: 'ad-bottom', element: document.getElementById('ad-bottom') }
+    ];
+
+    // Function to select and display a random ad in a random position
+    function displayRandomAd() {
+      // Select a random ad
+      const randomAdIndex = Math.floor(Math.random() * ads.length);
+      const selectedAd = ads[randomAdIndex];
+
+      // Select a random position
+      const randomPositionIndex = Math.floor(Math.random() * adPositions.length);
+      const selectedPosition = adPositions[randomPositionIndex];
+
+      // Set atOptions for the selected ad
+      window.atOptions = {
+        'key': selectedAd.key,
+        'format': selectedAd.format,
+        'height': selectedAd.height,
+        'width': selectedAd.width,
+        'params': {}
+      };
+
+      // Create a script element to load the ad
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = selectedAd.src;
+
+      // Append the script to the selected position
+      selectedPosition.element.appendChild(script);
+    }
+
+    // Call the function when the page loads
+    window.onload = displayRandomAd;
+  </script>
 
 </body>
 </html>
