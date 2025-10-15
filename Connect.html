@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Contact FarmToken Support">
+  <title>Contact Us | FarmToken</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("xXY4-X6Yck0j0UQ35"); // EmailJS Public Key
+    })();
+  </script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      overflow-x: hidden;
+      min-height: 100vh;
+      background: white;
+    }
+
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 2px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .contact-container {
+      animation: fadeIn 0.4s ease;
+    }
+
+    input, textarea {
+      transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(40, 167, 69, 0.15);
+    }
+
+    button[type="submit"] {
+      background: linear-gradient(135deg, #28a745, #20c997);
+      transition: all 0.3s ease;
+    }
+
+    button[type="submit"]:hover:not(:disabled) {
+      background: linear-gradient(135deg, #218838, #1aa179);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+    }
+
+    button[type="submit"]:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .developer-only {
+      display: none;
+    }
+
+    .select-text {
+      user-select: text;
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+    }
+  </style>
+</head>
+<body class="bg-white min-h-screen flex flex-col">
+  
+  <header class="flex items-center px-4 py-3 shadow bg-white sticky top-0 z-10">
+    <div class="flex items-center gap-2">
+      <img src="Logo.png" alt="FarmToken Logo" class="h-10 w-10 object-contain" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%2328a745%22/></svg>'">
+      <h1 class="text-xl sm:text-2xl font-bold text-red-600">FarmToken</h1>
+    </div>
+  </header>
+
+  <!-- Advertisement Banner -->
+  <div class="w-full flex justify-center bg-gray-50 py-4">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '63718988f07bc6d276f3c6a441757cae',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/63718988f07bc6d276f3c6a441757cae/invoke.js"></script>
+  </div>
+
+  <main class="flex-1 w-full h-full">
+    <div class="contact-container bg-white h-full p-6 sm:p-8">
+      <div class="text-center mb-6">
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">Contact Us</h2>
+        <p class="text-sm sm:text-base text-gray-600">We'd love to hear from you! Send us a message.</p>
+      </div>
+
+      <form id="contactForm" class="space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Your Name</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required 
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            placeholder="Enter your name"
+          >
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Your Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            placeholder="your.email@example.com"
+          >
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Your Message</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            required 
+            rows="5"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent resize-vertical"
+            placeholder="Tell us what's on your mind..."
+          ></textarea>
+        </div>
+
+        <button 
+          type="submit" 
+          id="submitBtn"
+          class="w-full py-3 text-white font-bold rounded-lg text-base sm:text-lg shadow-lg"
+        >
+          Send Message
+        </button>
+      </form>
+
+      <div class="mt-6 text-center">
+        <span class="developer-only" data-email="ainetworkmining22@gmail.com"></span>
+        <p class="text-sm text-gray-500">Our team will get back to you as soon as possible.</p>
+      </div>
+
+      <p class="text-xs text-gray-500 text-center mt-4 select-text">
+        By continuing, you agree to FarmToken's 
+        <a href="usage-policy.html" class="text-green-600 hover:underline">Usage Policy</a>, 
+        and acknowledge our 
+        <a href="privacy-policy.html" class="text-green-600 hover:underline">Privacy Policy</a>.
+      </p>
+
+      <div class="mt-6 pt-6 border-t border-gray-200 flex justify-center gap-4">
+        <a href="privacy-policy.html" class="text-sm text-green-600 hover:underline font-semibold">Privacy Policy</a>
+        <span class="text-gray-300">|</span>
+        <a href="usage-policy.html" class="text-sm text-green-600 hover:underline font-semibold">Usage Policy</a>
+      </div>
+    </div>
+
+    <div id="notification" class="fixed top-20 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300">
+      <p id="notificationText" class="text-sm font-semibold"></p>
+    </div>
+  </main>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const notification = document.getElementById('notification');
+    const notificationText = document.getElementById('notificationText');
+
+    function showNotification(message, type = 'success') {
+      notificationText.textContent = message;
+      notification.className = `fixed top-20 right-4 px-6 py-3 rounded-lg shadow-lg z-50 transform transition-transform duration-300 ${
+        type === 'success' ? 'bg-green-500' : 'bg-red-500'
+      } text-white`;
+      notification.style.transform = 'translateX(0)';
+      
+      setTimeout(() => {
+        notification.style.transform = 'translateX(120%)';
+      }, 3000);
+    }
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+      };
+
+      emailjs.send('service_ogacydi', 'template_8b8s4u9', formData)
+        .then(function(response) {
+          showNotification('Message sent successfully!', 'success');
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Message';
+        }, function(error) {
+          showNotification('Failed to send message. Please try again.', 'error');
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Message';
+          console.error('EmailJS Error:', error);
+        });
+    });
+
+    // For developers: Access email via console
+    console.log("Developer Email: " + document.querySelector('.developer-only').getAttribute('data-email'));
+  </script>
+</body>
+</html>
